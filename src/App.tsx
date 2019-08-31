@@ -14,11 +14,13 @@ const App: React.FC = () => {
     <Router basename="/">
       <div>
         <Header />
-        <Route path='/login' component={Login}></Route>
-        <Route path='/contact' component={Contact}></Route>
-        <Route exact path='/' component={Home}></Route>
-        <Route path='/registration' component={Registration}></Route>
-        <Route path='/forgotpassword' component={ForgotPassword}></Route>
+        <div className="container">
+          <Route path='/login' component={Login}></Route>
+          <Route path='/contact' component={Contact}></Route>
+          <Route exact path='/' component={Home}></Route>
+          <Route path='/registration' component={Registration}></Route>
+          <Route path='/forgotpassword' component={ForgotPassword}></Route>
+        </div>
         <Footer />
       </div>
     </Router>
